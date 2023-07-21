@@ -1,0 +1,36 @@
+    .language{
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        button{
+            background-color: transparent;
+        }
+        h4{
+            padding-left: 30px;
+        }
+
+    }
+    .menu{
+        overflow-y: auto;
+        .menuList{
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            .iconMenu{
+                font-size: 1.8rem;
+                padding-right: 8px;
+                display: inline-block;
+                width: 30px;
+            }
+            .title{
+                font-size: 1.5rem;
+                padding-left: 4px;
+            }
+        
+            &:hover{
+                background-color: rgb(235, 235, 235);
+                cursor: pointer;
+            }
+        }
+    }
+     

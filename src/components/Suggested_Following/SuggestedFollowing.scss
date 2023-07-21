@@ -1,0 +1,110 @@
+.list_accounts{
+    position: relative;
+    margin-top: 30px;
+    padding-top: 15px;
+    .label{
+        margin-bottom: 8px;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    .label::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 300px;
+        height: 1px;
+        background-color: rgb(214, 213, 213);
+    }
+
+    .account_item{
+        display: flex;
+        align-items: center;
+        padding: 8px 0;
+        &:hover{
+            background: rgba(22, 24, 35, 0.03);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .avatar{
+            width: 35px;
+            height: 35px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .user_info{
+            padding-left: 10px;
+            line-height: 1.4;
+            .nickname{
+                font-weight: 700;
+                font-size: 16px;
+                .icon{
+                    padding-left: 4px;
+                    color: rgb(38, 222, 222);
+                }
+            }
+            .name{
+                font-weight: 400;
+                font-size: 13px;
+                color: rgba(22, 24, 35, 0.75);
+            }
+        }
+    }
+}
+
+ // //Tippy AccountItem
+.detail_info{
+    width: 300px;
+    padding: 20px;
+    .header_info{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        align-items: center;
+        .avatar_info{
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .btn-follow{
+            font-weight: 700;
+            font-size: 1.4rem;
+            padding: 7px 30px;
+            border-radius: 5px;
+            background-color: var(--color-red);
+            color: #fff;
+            border: none;
+        }
+    }
+    .content{  
+        .nickname{
+            font-size: 1.6rem;
+            color: #000;
+            .icon{
+                padding-left: 4px;
+                color: rgb(38, 222, 222);
+            }
+
+        }
+        .name{
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+    .follower{
+        display: flex;
+        padding-top: 5px;
+        p{
+            color: #000;
+            font-weight: 800;
+            font-size: 1.6rem;
+            span{
+                font-weight: 400;
+            }
+        }
+        :nth-child(1){
+            padding-right: 10px;
+        }
+    }
+}

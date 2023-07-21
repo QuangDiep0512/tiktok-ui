@@ -1,0 +1,52 @@
+.following_page{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px ;
+    height: 100%;
+    .follow_account{
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        height: 300px;
+        width: 100%;
+         .img_account,.video_account{
+             height: 100%;
+             width: 100%;
+             object-fit: cover;
+             position: absolute;
+         }
+         .user_info{
+             color: #fff;
+             position: absolute;
+             bottom: 20px;
+             left: 50%;
+             transform: translateX(-50%);
+             text-align: center;
+             width: 200px;
+             .img_avatar{
+                 width: 45px;
+                 height: 45px;
+                 object-fit: cover;
+                 border-radius: 50%;
+             }
+             .username{
+                 font-size: 18px;
+                 font-weight: 700;
+             }
+             .nickname{
+                 font-weight: 600;
+                 font-size: 14px;
+             }
+             .btn-follow{
+                 color: #fff;
+                 height: 40px;
+                 width: 100%;
+                 font-weight: 500;
+                 border-radius: 5px;
+                 background-color: var(--color-red);
+                 margin-top: 5px;
+                 font-size: 18px;
+             }
+         }
+     }
+}

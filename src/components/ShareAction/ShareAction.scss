@@ -1,0 +1,26 @@
+.shareIcon{
+    overflow-y: auto;
+    max-height: 350px;
+    padding: 10px 0;
+    .item_icon{
+        display: flex;
+        align-items: center;
+        padding: 10px ;
+        cursor: pointer;
+        &:hover{
+            background-color: rgb(225, 225, 225);
+        }
+    }
+    .item_icon>span{
+        display: flex;
+    }
+    .item_icon>p{
+        font-weight: 600;
+        margin-left: 10px;
+    }
+    .chevronDown{
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+    }
+}

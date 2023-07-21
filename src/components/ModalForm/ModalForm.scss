@@ -1,0 +1,119 @@
+.modal{
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .modal_mask{
+        width: 460px;
+        background-color: #fff;
+        border-radius: 10px;
+         animation: identifier 0.5s ease-in-out;
+    }
+    @keyframes identifier {
+        from{
+            scale: 0;
+        }
+        to{
+            scale: 100%;
+        }
+    }
+    
+    .inner{
+        .wrapp{
+            padding: 30px 30px 6px 0;
+            .header_login{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                background: rgba(22, 24, 35, 0.03);
+                margin-left : 100%;
+                transform: translateX(-100%);
+                .close_modal{
+                    width: 25px;
+                    height: 25px;
+                    color: rgb(90, 87, 87);
+                    cursor: pointer;
+                }
+            }
+        }
+        .list_btn_login{
+            padding: 20px 30px 0 30px;
+            overflow: hidden;
+            height: 380px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            overflow-y:auto ;
+            .heading_login{
+                font-size: 32px;
+                margin-top: 40px ;
+                padding-bottom: 10px;
+            }
+            .button{
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                margin-bottom: 20px;
+                border-radius: 3px;
+                background-color: transparent;
+                border: 1px solid #ccc;
+                .useLogin{
+                    width: 100%;
+                    align-items: center;
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                }
+                &:hover{
+                    background-color: rgba(22, 24, 35, 0.03);
+                }
+                .facebook_icon{
+                    color: #0e8cf1;
+                }
+                .google_icon{
+                    color: #4285f4;
+                }
+                .twitter_icon{
+                    color:#1b9cef;
+                }
+                .line_icon{
+                    color: #00c100;
+                }
+                .instagram_icon{
+                    color: #C33091;
+                }
+                .icons{
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+    .fotter_modal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid rgba(22, 24, 35, 0.12);
+        padding: 20px;
+        .txt{
+            color: rgb(70, 70, 70);
+        }
+        .signUp .link{
+            margin-left: 3px;
+            color: var( --color-red);
+            font-weight: 600;
+            font-size: 1.5rem;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}

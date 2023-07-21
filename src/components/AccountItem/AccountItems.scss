@@ -1,0 +1,29 @@
+.account{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    &:hover{
+        background-color: rgb(235, 235, 235);
+        cursor: pointer;
+    }
+    img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .info{
+        padding-left: 10px;
+        .check{
+            padding-left: 6px;
+            color: rgb(38, 222, 222);
+        }
+        h4{
+            font-size: 16px;
+        }
+        span{
+            font-size: 14px;
+            color: rgb(139, 139, 139);
+        }
+    }
+}

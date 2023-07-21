@@ -1,0 +1,189 @@
+.video{
+    padding-bottom: 20px;
+    // width: 100%;
+    height: 100%;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+        .headerName{
+            display: flex;
+            justify-content: space-between;
+            .btn-follow{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 30px;
+                width: 90px;
+                font-weight: 500;
+                margin-right: 20px;
+            }
+        }
+        .headerInfo{
+            display: flex;
+            .image{
+                width: 55px;
+                height: 55px;
+                object-fit: cover;
+                border-radius: 50%;
+                margin-right: 12px;
+            }
+            .info {
+                .username{
+                    font-size: 1.4rem;
+                    display: inline-block;
+                    padding-left: 5px;
+                }
+                span{
+                    font-weight: 700;
+                    font-size: 1.8rem;
+                    &:hover{
+                        text-decoration:underline;
+                    }
+                }
+                .iconMusic{
+                    font-size: 14px;
+                    color: rgb(62, 62, 62);
+                    font-weight: 900;
+                }
+                .music{
+                    display: flex;
+                    align-items: center;
+                    .nameMusic{
+                        padding-left: 5px;
+                        color: rgb(34, 33, 33);
+                        font-weight: 500;
+                    }
+                }
+
+            }
+        }
+        .videoMusic{
+            display: flex;
+            margin-left: 70px;
+            margin-top: 10px;
+            height: 100%;
+            width: 100%;
+             
+            .video_items{
+                width: 100%;
+                position: relative;
+                cursor: pointer;
+
+                .playVideo,.loudspeaker,.report,.pauseVideo{
+                    display: none;
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                }
+                .playVideo,.pauseVideo{
+                    bottom: 10px;
+                    left: 0;
+                    margin-left:20px ;
+                    margin-bottom:30px ;
+                }
+    
+                .loudspeaker{
+                    bottom: 0;
+                    right: 0;
+                    margin-right: 20px;
+                    margin-bottom: 40px;
+                    .turnOn{
+                        position: relative;
+                        .increase_decrease{
+                            position: absolute;
+                            width: 24px;
+                            height: 64px;
+                            background: rgba(22, 24, 35, 0.34);
+                            border-radius: 32px;
+                            top: -64px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            input[type="range"]::-webkit-slider-thumb {
+                                -webkit-appearance: none;
+                                width: 13px;
+                                height: 13px;
+                                border-radius: 50%;
+                                background-color: #fff; 
+                                cursor: pointer;
+                              }
+
+                        }
+                        
+                        .salary{
+                            height: 2px;
+                            width: 46px;
+                            transform: rotate(-90deg);
+                            -webkit-appearance: none;
+                            background-color: #fff;
+                            border-radius: 4px;
+                        }
+                    }
+                }
+    
+                .report{
+                    right: 16px;
+                    top: 30px;
+                    width: 90px;
+                    font-weight: 600;
+                    .text{
+                        color: #fff;
+                    }
+                }
+                video{
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 10px;
+                }
+                &:hover{
+                    .playVideo,.loudspeaker,.report,.pauseVideo{
+                        display: block;
+                    }
+                }
+            }
+            .interact{
+                margin-left: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                .interact_item{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-top: 20px;
+                    justify-content: center;
+                    p{
+                        font-size: 1.2rem;
+                    }
+                    .icon{
+                        width: 48px;
+                        height: 48px;
+                        border-radius: 50px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: rgba(22,24,35,.06);
+                        &:hover{
+                            background-color: rgba(22,24,35,.03);
+                            cursor: pointer;
+                        }
+
+                    }
+                    
+                }
+            }
+        }
+        .header_info{
+            .btn-follow{
+                height: 38px;
+                width: 110px;
+            }
+        }
+        .footer_bio{
+            margin-top: 15px;
+            border-top: 1px solid #ccc;
+            padding-top: 15px;
+            font-size: 14px;
+        }
+         
+    }
